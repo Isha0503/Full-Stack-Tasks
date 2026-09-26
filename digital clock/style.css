@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #080b12;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* Main Card */
+
+.clock-card {
+    width: 100%;
+    max-width: 850px;
+
+    background: #111722;
+
+    border: 1px solid #273244;
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Top */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #273244;
+
+    padding-bottom: 20px;
+}
+
+.brand {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.brand span {
+    color: #38bdf8;
+}
+
+
+.status {
+    color: #22c55e;
+
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+}
+
+
+/* Clock */
+
+.clock-section {
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.day {
+    color: #94a3b8;
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+.time {
+    font-size: clamp(55px, 12vw, 120px);
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    line-height: 1;
+}
+
+
+.colon {
+    color: #38bdf8;
+}
+
+
+.period {
+    color: #38bdf8;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+}
+
+
+/* Date information */
+
+.date-box {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    border-top: 1px solid #273244;
+
+    padding-top: 25px;
+}
+
+.date-box > div {
+    background: #0b1019;
+
+    border: 1px solid #202a3a;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+.label {
+    color: #64748b;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+#date {
+    font-size: 18px;
+}
+
+.active-text {
+    color: #22c55e;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    color: #64748b;
+
+    padding-top: 25px;
+
+    font-size: 14px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .clock-card {
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+    .clock-section {
+        padding: 55px 10px;
+    }
+
+    .date-box {
+        grid-template-columns: 1fr;
+    }
+
+    .top-section {
+        align-items: flex-start;
+    }
+
+    .time {
+        letter-spacing: 2px;
+    }
+
+}
